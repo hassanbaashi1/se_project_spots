@@ -9,7 +9,7 @@
 
 .card__image {
   height: 413px;
-  width: 413px;
+  width: 100%;
   object-fit: cover;
   display: block;
 }
@@ -30,6 +30,9 @@
 }
 
 .card__title {
+  width: 119px;
+  height: 24px;
+  top: 425px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -41,4 +44,14 @@
   white-space: nowrap;
   overflow: hidden;
   max-width: 353px;
+  color: rgba(33, 33, 33, 1);
+}
+
+@media screen and (max-width: 627px) {
+  .card__image {
+    height: 288px;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+  }
 }
