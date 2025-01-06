@@ -3,9 +3,8 @@
 }
 
 .footer__copyright {
-  width: 104px;
-  height: 16px;
-  margin-left: 668px;
+  min-height: 16px;
+  margin: 16px 0 0;
   display: flex;
   justify-content: center;
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;

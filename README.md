@@ -1,4 +1,4 @@
-# Responsive Screen Sizes Project
+# Responsive Screen Sizes Project Name Spots
 
 This project demonstrates a responsive web layout built using only HTML and CSS. It focuses on adapting the design to various screen sizes to provide an optimal viewing experience across devices.
 
