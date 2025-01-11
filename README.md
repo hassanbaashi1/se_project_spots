@@ -14,6 +14,7 @@ This project demonstrates a responsive web layout built using only HTML and CSS.
 - HTML
 - CSS
 - Responsive Design
+- flex Box
 
 ## Deployment
 
