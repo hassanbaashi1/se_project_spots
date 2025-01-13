@@ -21,4 +21,5 @@ This project demonstrates a responsive web layout built using only HTML and CSS.
 This webpage is deployed to GitHub page
 
 [-Deployment Link:](https://hassanbaashi1.github.io/se_project_spots/)
-[- Video](https://drive.google.com/file/d/1rI96uY-aBUgtUakWbP6LNvmvn1AZR2cQ/view?usp=drive_link)
+
+[- Video](https://drive.google.com/file/d/1m_LFqjwJfyZjqZp6_vPHrv5gKGsrKxzJ/view?usp=drive_link)
