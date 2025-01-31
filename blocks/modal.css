@@ -24,6 +24,7 @@
   position: relative;
   width: 100%;
   box-sizing: border-box;
+  border-radius: 12px;
 }
 
 .modal__close-btn {
@@ -38,6 +39,11 @@
   opacity: 0.4px;
   border: none;
   background: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.modal__close-btn:hover {
+  opacity: 0.8;
 }
 
 .modal__title {
@@ -76,6 +82,7 @@
   padding: 18px 32px 18px 32px;
   gap: 8px;
   border-radius: 8px;
+  cursor: pointer;
   opacity: 0px;
   background: rgba(33, 33, 33, 1);
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;
@@ -88,6 +95,9 @@
   color: rgba(252, 245, 229, 1);
 }
 
+.modal__submit-btn:hover {
+  opacity: 0.8;
+}
 @media screen and (max-width: 627px) {
   .modal {
     padding: 0 10px;
