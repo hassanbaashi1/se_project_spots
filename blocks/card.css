@@ -40,7 +40,7 @@
 }
 
 .card__like-btn_like {
-  background-image: url("../images/like-icon-liked.svg");
+  background-image: url("../images/like-icon-heart.svg");
   opacity: 1;
 }
 
