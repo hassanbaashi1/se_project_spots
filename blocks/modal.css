@@ -63,13 +63,15 @@
   padding: 0;
   margin: 0;
   cursor: pointer;
-  background-image: url("../images/Close-light1.svg");
   background-size: contain;
+  background-color: inherit;
 }
 
 .modal__close-btn_type_preview {
   top: 0;
   right: -52.5px;
+  background-color: inherit;
+  background-image: url("../images/Close-light1.svg");
 }
 
 .modal__close-btn:hover {
@@ -123,10 +125,23 @@
   flex-direction: column;
   gap: 8px;
   margin-bottom: 32px;
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 17.6px;
+  letter-spacing: 0%;
+  color: hsla(0, 0%, 13%, 0.7);
 }
 
 .modal__input {
   padding: 16px 12px;
+  border-radius: 8px;
+  border: 1px solid hsla(0, 0%, 13%, 0.4);
+  font-family: "Poppins", "Arial", "Helvetica", sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: hsla(0, 0%, 13%, 0.3);
 }
 
 .modal__submit-btn {
@@ -161,7 +176,7 @@
     padding: 0 10px;
   }
 
-  .modal__container {
+  .modal__content {
     padding: 12px;
   }
 
