@@ -25,6 +25,7 @@
   background: #fff;
   padding: 36px 50px 32px;
   max-width: 730px;
+  max-height: 415px;
   position: relative;
   width: 100%;
   box-sizing: border-box;
@@ -177,7 +178,13 @@
   }
 
   .modal__content {
-    padding: 12px;
+    max-width: 100%;
+    padding: 20px;
+    transform: none;
+  }
+
+  .modal__image {
+    max-width: 100%;
   }
 
   .modal__title {
@@ -189,6 +196,13 @@
     top: 12px;
     right: 12px;
   }
+
+  .modal__close-btn_type_preview {
+    max-width: 40px;
+    max-height: 40px;
+    top: -41px;
+  }
+
   .modal__labal {
     margin-bottom: 24px;
   }
