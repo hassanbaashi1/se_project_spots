@@ -69,7 +69,9 @@
 }
 
 .modal__close-btn_type_preview {
-  top: 0;
+  width: 40px;
+  height: 40px;
+  top: -170px;
   right: -52.5px;
   background-color: inherit;
   background-image: url("../images/Close-light1.svg");
@@ -91,13 +93,15 @@
 }
 
 .modal__caption {
-  position: absolute;
+  max-width: 214px;
   background: #212121;
   color: #ffffff;
+  align-self: start;
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
+  text-align: center;
   padding: 8px 12px;
   border-radius: 8px;
   margin: 0;
