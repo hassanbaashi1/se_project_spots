@@ -125,7 +125,7 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -179,7 +179,7 @@
 
   .modal__content {
     max-width: 100%;
-    padding: 20px;
+    padding: 12px;
     transform: none;
   }
 
@@ -188,7 +188,7 @@
   }
 
   .modal__title {
-    margin: 10px 0 34px;
+    margin: 0 0 24px;
     font-size: 20px;
     line-height: 20px;
   }
