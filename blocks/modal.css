@@ -29,7 +29,6 @@
   width: 100%;
   box-sizing: border-box;
   border-radius: 12px;
-  transform: scale(0.8);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -143,7 +142,7 @@
 
 .modal__input {
   padding: 16px 12px;
-  height: 20px;
+  height: 18px;
   border-radius: 8px;
   border: 1px solid hsla(0, 0%, 13%, 0.4);
   font-family: "Poppins", "Arial", "Helvetica", sans-serif;
