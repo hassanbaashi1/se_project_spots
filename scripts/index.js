@@ -92,6 +92,24 @@ function closeModal(modal) {
   modal.classList.remove("modal_opened");
 }
 
+function handleEscClose(event) {
+  if (event.key === "Escape") {
+    const openModal = document.querySelector(".modal_opened");
+    if (openModal) closeModal(openModal);
+  }
+}
+
+function handleOverlayClose(event) {
+  if (event.target.classList.contains("modal")) {
+    closeModal(event.target);
+  }
+}
+
+document.addEventListener("keydown", handleEscClose);
+document.querySelectorAll(".modal").forEach((modal) => {
+  modal.addEventListener("mousedown", handleOverlayClose);
+});
+
 function handleEditFormSubmit(evt) {
   evt.preventDefault();
   disableButton(cardsubmitBtn, settings);
@@ -123,6 +141,11 @@ cardModalCloseBtn.addEventListener("click", () => {
 profileEditButton.addEventListener("click", () => {
   editModalNameInput.value = profileName.textContent;
   editModalDescriptionInput.value = profileDescription.textContent;
+  resetValidation(
+    editFormElement,
+    [editModalNameInput, editModalDescriptionInput],
+    settings
+  );
   openModal(editModal);
 });
 editModalCloseBtn.addEventListener("click", () => {
