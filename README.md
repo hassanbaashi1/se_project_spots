@@ -1,25 +1,24 @@
-# Responsive Screen Sizes Project Name Spots
+🏙️ Spots - Responsive Web Application
+Spots is a responsive web application designed to provide a seamless user experience across different screen sizes. It features user profiles, an interactive gallery, form validation, and improved modal UX.
 
-This project demonstrates a responsive web layout built using only HTML and CSS. It focuses on adapting the design to various screen sizes to provide an optimal viewing experience across devices.
-
-### Features
-
-- Responsive Design: Ensures compatibility with different screen sizes, from mobile devices to large desktop monitors.
-- Flexbox and Grid Layouts: Utilizes modern CSS techniques for flexible and structured layouts.
-- Media Queries: Adjusts styles dynamically based on screen width and height.
-- Profile and Gallery Sections: Displays user profile information and a grid-style gallery.
-
-## Technologies Used
-
-- HTML
-- CSS
-- Responsive Design
-- flex Box
+🌟 Features
+Fully Responsive Design – Adapts to various devices, from mobile to desktop.
+Dynamic Profile & Gallery Sections – Showcases user profiles and images in a structured layout.
+Form Validation – Ensures correct input formats with real-time validation.
+Profile form: Name (2-40 chars), Description (2-200 chars)
+New card form: Image URL validation, Caption (2-30 chars)
+Modals & Forms – Users can add new posts via a responsive pop-up form.
+Improved Modal UX
+Close modals by clicking outside the form
+Close modals using the Escape key
+Flexbox & Grid Layouts – Utilizes modern CSS techniques for a structured and adaptive design.
+🛠️ Technologies Used
+HTML5
+CSS3 (Flexbox, Grid, Media Queries)
+JavaScript (for form validation & modal interactions)
 
 ## Deployment
 
 This webpage is deployed to GitHub page
 
 [-Deployment Link:](https://hassanbaashi1.github.io/se_project_spots/)
-
-[- Video](https://drive.google.com/file/d/1m_LFqjwJfyZjqZp6_vPHrv5gKGsrKxzJ/view?usp=drive_link)
