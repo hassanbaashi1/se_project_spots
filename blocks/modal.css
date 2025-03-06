@@ -195,7 +195,7 @@
 }
 
 .modal__submit-btn-disabled {
-  background: hsba(0, 0%, 13%, 1);
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 627px) {
