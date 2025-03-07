@@ -87,9 +87,17 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
+  if (!document.hasEventListener) {
+    document.addEventListener("keydown", handleEscClose);
+    document.hasEventListener = true;
+  }
 }
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
+  if (!document.querySelector(".modal_opened")) {
+    document.removeEventListener("keydown", handleEscClose);
+    document.hasEventListener = false;
+  }
 }
 
 function handleEscClose(event) {
@@ -105,7 +113,6 @@ function handleOverlayClose(event) {
   }
 }
 
-document.addEventListener("openModal", closeModal);
 document.querySelectorAll(".modal").forEach((modal) => {
   modal.addEventListener("mousedown", handleOverlayClose);
 });
