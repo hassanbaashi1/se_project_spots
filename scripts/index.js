@@ -87,17 +87,11 @@ function getCardElement(data) {
 
 function openModal(modal) {
   modal.classList.add("modal_opened");
-  if (!document.hasEventListener) {
-    document.addEventListener("keydown", handleEscClose);
-    document.hasEventListener = true;
-  }
+  document.addEventListener("keydown", handleEscClose);
 }
 function closeModal(modal) {
   modal.classList.remove("modal_opened");
-  if (!document.querySelector(".modal_opened")) {
-    document.removeEventListener("keydown", handleEscClose);
-    document.hasEventListener = false;
-  }
+  document.removeEventListener("keydown", handleEscClose);
 }
 
 function handleEscClose(event) {
@@ -141,10 +135,6 @@ function handleAddCardSubmit(evt) {
 
 cardModalButton.addEventListener("click", () => {
   const closeButtons = document.querySelectorAll(".modal__close");
-  closeButtons.forEach((button) => {
-    const popup = button.closest(".modal");
-    button.addEventListener("click", () => closePopup(popup));
-  });
 
   openModal(cardModal);
 });
