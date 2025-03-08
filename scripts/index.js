@@ -164,9 +164,7 @@ initialCards.forEach((item) => {
   cardsList.prepend(cardElement);
 });
 
-initialCards.forEach((item) => {
-  function renderCard(item, method = "prepend") {
-    const cardElement = getCardElement(item);
-    cardsList[method](cardElement);
-  }
-});
+function renderCard(item, method = "prepend") {
+  const cardElement = getCardElement(item);
+  cardsList[method](cardElement);
+}
