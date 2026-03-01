@@ -44,7 +44,7 @@ This project demonstrates a responsive web application built with **HTML, CSS, a
 ## 🌐 Deployment
 
 - **Live Site:**  
-  👉 https://hassanbaashi1.github.io/se_project_spots-main-project4/
+  👉 https://hassanbaashi1.github.io/se_project_spots/
 
 ---
 
