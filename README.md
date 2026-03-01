@@ -1,38 +1,55 @@
-# Responsive Screen Sizes Project Name Spots
+# Spots — Responsive Screen Sizes Project
 
-This project demonstrates a responsive web application built with HTML, CSS, and JavaScript, featuring a dynamic gallery of cards. It emphasizes responsive layouts, user interactions, and modern front-end development techniques.
+This project demonstrates a responsive web application built with **HTML, CSS, and JavaScript**, featuring a dynamic gallery of cards. It emphasizes responsive layouts, user interactions, modals, and form validation using modern front-end development practices.
 
-### Features
+---
 
-- Responsive Design: Works seamlessly on mobile, tablet, and desktop devices.
+## 🚀 Features
 
-- Profile Section: Users can edit their profile name and description.
+- **Responsive Design**  
+  Works seamlessly on mobile, tablet, and desktop devices.
 
-- Gallery of Cards: Displays images with titles in a flexible grid layout.
+- **Profile Section**  
+  Users can edit their profile name and description via a modal.
 
-- Interactive Cards:
-  .Like/unlike functionality with visual feedback.
+- **Gallery of Cards**  
+  Displays images with titles in a flexible, responsive grid layout.
 
-  .Delete cards dynamically.
+- **Interactive Cards**
+  - Like / unlike cards with visual feedback
+  - Delete cards dynamically
+  - Preview images in a modal when clicked
 
-  .Preview images in a modal on click.
+- **Modals**
+  - Edit profile modal
+  - New post modal
+  - Image preview modal
+  - Close modals via overlay click or Escape key
 
-  .Modals: Smooth opening/closing of modals for profile editing, new card creation, and image previews.
+- **Form Validation**
+  - Client-side validation using browser validation messages
+  - Submit buttons disabled until forms are valid
 
-  .Form Validation: Ensures users submit valid data for profile and new cards.
+---
 
-## Technologies Used
+## 🛠 Technologies Used
 
-- HTML
-
-- CSS (Flexbox, Grid, Media Queries)
-
+- HTML5
+- CSS3 (Flexbox, Grid, Media Queries)
 - JavaScript (ES6+)
+- Responsive Web Design
 
-- Responsive Design
+---
 
-## Deployment
+## 🌐 Deployment
 
-This webpage is deployed to GitHub page
+- **Live Site:**  
+  👉 https://hassanbaashi1.github.io/se_project_spots-main-project4/
 
-[-Deployment Link:](https://hassanbaashi1.github.io/se_project_spots-main-project4/)
+---
+
+## 🎥 Project Pitch Video
+
+Check out this video where I explain the project, my development process, and challenges I faced:
+
+👉 https://drive.google.com/file/d/1kq4sfvs1rNDj9563MutQFkxoHhl6HCYI/view

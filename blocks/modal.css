@@ -12,7 +12,9 @@
   justify-content: center;
   padding: 0 20px;
   visibility: hidden;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
   opacity: 0;
 }
 
@@ -163,6 +165,20 @@
   line-height: 110.00000000000001%;
   letter-spacing: 0%;
   color: hsla(0, 100%, 50%, 0.7);
+  visibility: hidden;
+}
+
+.modal__error_visible {
+  visibility: visible;
+}
+
+.modal__input_type_error {
+  border: 1px solid rgba(255, 0, 0, 0.6);
+}
+
+.modal__submit-btn_disabled {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .modal__submit-btn {

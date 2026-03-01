@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -72,18 +72,28 @@
                 id="profile-name-input"
                 type="text"
                 class="modal__input"
+                name="name"
                 required
+                minlength="2"
+                maxlength="40"
               />
+              <span class="modal__error profile-name-input-error"></span>
             </label>
+
             <label class="modal__label">
               Description
               <input
                 id="profile-description-input"
                 type="text"
                 class="modal__input"
+                name="description"
                 required
+                minlength="2"
+                maxlength="200"
               />
+              <span class="modal__error profile-description-input-error"></span>
             </label>
+
             <button class="modal__submit-btn" type="submit">Save</button>
           </form>
         </div>
@@ -103,18 +113,26 @@
                 id="image-input"
                 type="url"
                 class="modal__input"
+                name="link"
                 required
               />
+              <span class="modal__error image-input-error"></span>
             </label>
+
             <label class="modal__label">
               Caption
               <input
                 id="caption-input"
                 type="text"
                 class="modal__input"
+                name="name"
                 required
+                minlength="2"
+                maxlength="30"
               />
+              <span class="modal__error caption-input-error"></span>
             </label>
+
             <button class="modal__submit-btn" type="submit">Save</button>
           </form>
         </div>
@@ -135,6 +153,7 @@
       </div>
     </div>
 
+    <script src="./scripts/validation.js" defer></script>
     <script src="./scripts/index.js" defer></script>
   </body>
 </html>
