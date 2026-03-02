@@ -74,7 +74,7 @@ function closeModal(modal) {
   document.removeEventListener("keydown", handleEscClose);
 }
 
-function handleEscClose(evt) {
+function closeOnEscape(evt) {
   if (evt.key === "Escape") {
     const openedModal = document.querySelector(".modal_opened");
     if (openedModal) {
@@ -83,14 +83,14 @@ function handleEscClose(evt) {
   }
 }
 
-function handleOverlayClose(evt) {
+function closeOnOverlayClick(evt) {
   if (evt.target.classList.contains("modal")) {
     closeModal(evt.target);
   }
 }
 
 document.querySelectorAll(".modal").forEach((modal) => {
-  modal.addEventListener("mousedown", handleOverlayClose);
+  modal.addEventListener("mousedown", closeOnOverlayClick);
 });
 
 // ===== Card Functions =====
@@ -151,8 +151,6 @@ editForm.addEventListener("submit", (e) => {
 
 // ===== New Post Modal =====
 newPostButton.addEventListener("click", () => {
-  newPostImageInput.value = "";
-  newPostCaptionInput.value = "";
   openModal(newPostModal);
 });
 
@@ -166,7 +164,6 @@ newPostForm.addEventListener("submit", (e) => {
 
   cardsList.prepend(getCardElement(newCardData));
   newPostForm.reset();
-
   resetValidation(newPostForm, validationConfig);
   closeModal(newPostModal);
 });
@@ -175,14 +172,3 @@ newPostForm.addEventListener("submit", (e) => {
 editModalCloseBtn.addEventListener("click", () => closeModal(editModal));
 newPostModalCloseBtn.addEventListener("click", () => closeModal(newPostModal));
 previewModalCloseBtn.addEventListener("click", () => closeModal(previewModal));
-
-const validationConfig = {
-  formSelector: ".modal__form",
-  inputSelector: ".modal__input",
-  submitButtonSelector: ".modal__submit-btn",
-  inactiveButtonClass: "modal__submit-btn_disabled",
-  inputErrorClass: "modal__input_type_error",
-  errorClass: "modal__error_visible",
-};
-
-enableValidation(validationConfig);
