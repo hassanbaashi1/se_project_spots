@@ -61,19 +61,23 @@ const previewCaptionEl = previewModal.querySelector(".modal__caption");
 const cardTemplate = document.querySelector("#card-template");
 const cardsList = document.querySelector(".cards__list");
 
-// ===== Modal Functions =====
+// ===== Open a modal =====
 function openModal(modal) {
   if (!modal) return;
   modal.classList.add("modal_opened");
-  document.addEventListener("keydown", handleEscClose);
+  // Attach Escape key listener
+  document.addEventListener("keydown", closeOnEscape);
 }
 
+// ===== Close a modal =====
 function closeModal(modal) {
   if (!modal) return;
   modal.classList.remove("modal_opened");
-  document.removeEventListener("keydown", handleEscClose);
+  // Remove Escape key listener
+  document.removeEventListener("keydown", closeOnEscape);
 }
 
+// ===== Escape key handler =====
 function closeOnEscape(evt) {
   if (evt.key === "Escape") {
     const openedModal = document.querySelector(".modal_opened");
@@ -83,12 +87,14 @@ function closeOnEscape(evt) {
   }
 }
 
+// ===== Overlay click handler =====
 function closeOnOverlayClick(evt) {
   if (evt.target.classList.contains("modal")) {
     closeModal(evt.target);
   }
 }
 
+// ===== Attach overlay click to all modals =====
 document.querySelectorAll(".modal").forEach((modal) => {
   modal.addEventListener("mousedown", closeOnOverlayClick);
 });
