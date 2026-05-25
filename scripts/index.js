@@ -174,7 +174,7 @@ newPostForm.addEventListener("submit", (e) => {
   closeModal(newPostModal);
 });
 
-// ===== Close buttons =====
+// ===== Close buttons ===== close buttons
 editModalCloseBtn.addEventListener("click", () => closeModal(editModal));
 newPostModalCloseBtn.addEventListener("click", () => closeModal(newPostModal));
 previewModalCloseBtn.addEventListener("click", () => closeModal(previewModal));
